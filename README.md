@@ -8,18 +8,18 @@ Data Preprocessing:
 Converts input text to lowercase.
 Removes punctuation and stopwords.
 Applies stemming to improve feature consistency.
+
 Model:
-
 The classification model is built using the Multinomial Naive Bayes algorithm from scikit-learn.
+
 Accuracy:
-
 The model has an accuracy of 97% on the test dataset.
+
 Deployment:
-
 The model is deployed using Streamlit, a web application framework, allowing for easy interaction and testing of the model via a user-friendly interface.
-Requirements
-To run the project, you will need to have the following Python libraries installed:
 
+Requirements:
+To run the project, you will need to have the following Python libraries installed:
 scikit-learn: For the Naive Bayes classification.
 nltk: For text processing (tokenization, stopwords removal, and stemming).
 streamlit: For building the interactive deployment interface.
@@ -33,7 +33,7 @@ pip install scikit-learn nltk streamlit pandas numpy
 2. Installation and Setup
 
 Clone the repository:
-git clone https://github.com/yourusername/spam-classifier.git
+git clone https://github.com/Aaditya1011/Email-spam-classifier.git
 
 
 Install the dependencies:
@@ -74,14 +74,12 @@ spam-classifier/
 ├── notebook             # jupyter notebook
 ├── app.py               # Streamlit app for deploying the model
 ├── requirements.txt     # List of required Python libraries
-├── spam.csv        # Dataset of labeled spam and valid messages
+├── spam.csv             # Dataset of labeled spam and valid messages
 └── README.md            # This file
 
-Example Usage
+
 Launch the app by running:
 
-bash
-Copy
 streamlit run app.py
 On the Streamlit interface, enter a message in the provided text box and click "Classify".
 
