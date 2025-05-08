@@ -2,9 +2,9 @@ import streamlit as st
 import string
 import pickle
 import nltk 
+nltk.data.path.append('./nltk_data')
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
-
 
 # loading pickle files.
 tfidf = pickle.load(open('models/vectorizer.pkl','rb'))
